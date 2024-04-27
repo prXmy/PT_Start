@@ -12,9 +12,9 @@ services:
       - DATABASE_NAME=first
       - DATABASE_USER=root
       - DATABASE_PASSWORD=kali
-    volumes:
-      - ./html:/var/www/html
-      - db_data:/var/lib/mysql
+    #volumes:
+      #- ./html:/var/www/html
+      #- db_data:/var/lib/mysql
     depends_on:
       - db
     networks:
